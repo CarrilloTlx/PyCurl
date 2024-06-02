@@ -1,8 +1,5 @@
-Got it, here's your updated documentation with descriptions of parameters and return types for each method:
-
----
-
 # PyCurl
+
 
 PyCurl is a Python package that provides a simple and flexible interface for making HTTP requests. It's designed to handle customizable configurations and error management, enabling easy execution of GET, POST, PUT, and DELETE requests.
 
@@ -190,3 +187,34 @@ Gets the error code from the last failed request.
 
 ##### Returns:
 - The error code.
+
+
+## Requirements
+
+- requests
+- tqdm
+
+You can install these libraries using pip:
+
+```
+pip install requests tqdm
+```
+
+These libraries are required to run the code provided in this documentation.
+
+
+## Contributions
+
+Contributions are welcome! If you'd like to contribute to PyCurl, you can follow these steps:
+
+1. Fork the repository from [here](https://github.com/CarrilloTlx/PyCurl).
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/PyCurl.git`
+3. Create a branch for your contribution: `git checkout -b my-contribution`
+4. Make your changes and commit: `git commit -am 'Add my contribution'`
+5. Push your changes to your fork: `git push origin my-contribution`
+6. Open a pull request in the original repository.
+
+Thank you for contributing!
+
+## License
+This project is licensed under the Open Software License ("OSL") v 3.0. You can find the full text of the license [here](https://raw.githubusercontent.com/CarrilloTlx/PyCurl/main/LICENSE.md).
