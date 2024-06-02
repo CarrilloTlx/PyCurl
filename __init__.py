@@ -27,10 +27,10 @@ print(response)
 """
 
 # Automatically import the Http class when the package is imported
-from .Http import Http as Curl
+from .Http import Http as PyCurl
 
 # Define the symbols exported by the package
-__all__ = ['Curl']
+__all__ = ['PyCurl']
 
 # Package version
 __version__ = '0.1.0'

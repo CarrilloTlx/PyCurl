@@ -15,8 +15,9 @@ class Http:
     """
     A class for making HTTP requests using the Python requests library.
     """
+    base_url = ""
 
-    def __init__(self, base_url=None):
+    def __init__(self):
         """
         Initializes a new instance of the Http class.
 
@@ -24,7 +25,6 @@ class Http:
         - base_url (str): The base URL for requests. Defaults to None.
 
         Attributes:
-        - base_url (str): The base URL for requests.
         - session (requests.Session): The requests session used for making requests.
         - headers (dict): Dictionary to store custom headers for requests.
         - cookies (dict): Dictionary to store cookies for requests.
@@ -34,7 +34,6 @@ class Http:
         - _error_message (str): Stores the error message from the last failed request.
         - _error_code (int): Stores the error code from the last failed request.
         """
-        self.base_url = base_url if base_url else ""
         self.session = requests.Session()
         self.headers = {}
         self.cookies = {}
@@ -177,6 +176,7 @@ class Http:
 
             self._error_message = None
             self._error_code = None
+            self.base_url = url
 
             response = self.session.request(method, url, **kwargs)
             response.raise_for_status()
