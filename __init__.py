@@ -33,7 +33,7 @@ from .Http import Http as PyCurl
 __all__ = ['PyCurl']
 
 # Package version
-__version__ = '0.1.0'
+__version__ = '1.0.0'
 
 # Description of the package functionality
 __description__ = "A package for handling HTTP requests with customizable settings and error handling."
