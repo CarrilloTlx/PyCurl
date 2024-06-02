@@ -1,46 +1,50 @@
-# Curl/__init__.py
-
 """
-Curl Package
+PyCurl - A flexible wrapper around the requests library for making HTTP requests.
 
-The Curl package provides a simple and flexible interface for making HTTP requests in Python.
-It is designed to handle customizable settings and error management, allowing for easy execution
-of GET, POST, PUT, and DELETE requests.
+PyCurl extends the functionality provided by BaseCurl to offer simplified methods for making common HTTP requests such as GET, POST, PUT, DELETE, PATCH, and OPTIONS.
 
-Key Features:
-- Define a base URL for all requests.
-- Configure headers, cookies, and basic or token authentication.
-- Handle redirects and timeouts.
-- Manage and save cookies to files.
-- Extract and manage errors from HTTP responses.
-- Reset the HTTP client configuration to its initial state.
+Attributes:
+    PyCurl.Curl: A class providing simplified methods for making HTTP requests.
+    PyCurl.__version__: The version of the PyCurl package.
+    PyCurl.__description__: A brief description of the PyCurl package.
 
-Usage example:
-```python
-from Curl import Http
+Example Usage:
+    from PyCurl import PyCurl
 
-http_client = Http(base_url="https://api.example.com")
-http_client.set_header('Authorization', 'Bearer my_token')
-response = http_client.get("/endpoint")
-print(response)
-
+    curl = PyCurl()
+    curl.get('https://api.example.com/data')
+    response = curl.response()
+    print(response)
 """
 
-# Automatically import the Http class when the package is imported
-from .Http import Http as PyCurl
+from .Curl import Curl as PyCurl
 
-# Define the symbols exported by the package
 __all__ = ['PyCurl']
 
-# Package version
-__version__ = '1.0.0'
+__version__ = '2.0.0'
+__description__ = 'PyCurl: A flexible wrapper around the requests library for making HTTP requests.'
 
-# Description of the package functionality
-__description__ = "A package for handling HTTP requests with customizable settings and error handling."
+# Additional imports
+# from .utils import some_function
+# from .config import CONFIG_VARIABLE
 
-# Optional global configuration
-import logging
+# Initialize global variables or resources
+# SOME_GLOBAL_VAR = initialize_global_var()
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-logger.info("Curl package imported successfully")
+# Document additional details
+# INSTALLATION_NOTES = """
+# To install PyCurl, you can use pip:
+# pip install PyCurl
+# """
+
+# Exception handling
+# try:
+#     # Code that may raise exceptions
+# except SomeException as e:
+#     # Handle the exception
+
+# Alias for classes or functions
+# ShortCurl = PyCurl
+
+# Configuration variables
+# CONFIG_VARIABLE = 'default_value'
