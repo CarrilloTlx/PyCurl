@@ -3,7 +3,7 @@ import os
 import asyncio
 from tqdm import tqdm
 
-from BaseCurl import BaseCurl
+from .BaseCurl import BaseCurl
 
 
 class Curl(BaseCurl):
