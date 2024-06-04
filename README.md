@@ -1,4 +1,4 @@
-# PyCurl
+# PyCurlify
 
 
 PyCurl is a Python package that provides a simple and flexible interface for making HTTP requests. It's designed to handle customizable configurations and error management, enabling easy execution of GET, POST, PUT, and DELETE requests.
@@ -15,12 +15,12 @@ PyCurl is a Python package that provides a simple and flexible interface for mak
 You can install PyCurl using pip:
 
 ```
-pip install PyCurl
+pip install PyCurlify
 ```
 
 ## Usage
 ```python
-from Curl import PyCurl
+from Curl import PyCurlify
 
 # Create an instance of PyCurl
 http_client = PyCurl()

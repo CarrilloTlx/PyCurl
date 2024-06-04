@@ -17,12 +17,12 @@ Example Usage:
     print(response)
 """
 
-from .Curl import Curl as PyCurl
+from .Curl import Curl as PyCurlify
 
-__all__ = ['PyCurl']
+__all__ = ['PyCurlify']
 
 __version__ = '2.0.0'
-__description__ = 'PyCurl: A flexible wrapper around the requests library for making HTTP requests.'
+__description__ = 'PyCurlify: A flexible wrapper around the requests library for making HTTP requests.'
 
 # Additional imports
 # from .utils import some_function
