@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock
-from PyCurl import PyCurl
+from pycurl import PyCurl
 
 
 class TestPyCurl(unittest.TestCase):
